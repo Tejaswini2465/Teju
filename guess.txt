@@ -1,0 +1,18 @@
+#include <stdio.h>
+void guess(){
+    int guess, num=10;
+    printf("Enter a number: ");
+    scanf("%d",&guess);
+    if(num==guess)
+    {
+        printf("correct");
+        
+    }
+    else
+    {
+        printf("incorrect");
+    }
+}
+void main(){
+    guess();
+}
