@@ -1,0 +1,13 @@
+import streamlit as st
+data = ["Hi", "Hello", "There", "Hey"]
+class Compo:
+    def __init__(self, button_name):
+        self.button_name = button_name
+        if st.button(self.button_name):
+            self.functionality()
+
+    def functionality(self):
+        st.toast(self.button_name)
+
+for i in data:
+    Compo(i)

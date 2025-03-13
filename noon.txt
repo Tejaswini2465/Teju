@@ -1,0 +1,10 @@
+import streamlit as st
+
+data = ["Hi", "Hello", "There"]
+
+class Compo:
+    def __init__(self, button_name):
+        st.button(button_name)
+
+for i in data:
+    Compo(i)
